@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-extension View {
+public extension View {
     func draggableScreenCover<Cover: View, ID: Hashable>(
         isPresented: Binding<Bool>,
         backgroundColor: Color = Color(uiColor: UIColor.systemBackground),
