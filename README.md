@@ -60,3 +60,4 @@ The file `DraggableCoverDemoView.swift` in the project contains examples for bot
 // System baselines for comparison
 .fullScreenCover(isPresented: $showFullScreenCover) { DemoCoverView() }
 .sheet(isPresented: $showNormalCover) { DemoCoverView() }
+```
