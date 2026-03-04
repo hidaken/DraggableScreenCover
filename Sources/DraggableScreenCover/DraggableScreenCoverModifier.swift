@@ -84,7 +84,7 @@ private struct DraggableScreenCoverModifier<Cover: View, ID: Hashable>: ViewModi
     }
     
     private var contentWrapper: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             backgroundColor
                 .ignoresSafeArea()
             
