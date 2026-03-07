@@ -42,10 +42,16 @@ private struct DraggableCoverDemoView: View {
             
             Capsule(style: .continuous)
                 .frame(width: 300, height: 68)
-                .foregroundStyle(.red)
+                .foregroundStyle(.blue)
                 .matchedTransitionSource(id: sourceId, in: namespace)
-                .onTapGesture {
-                    showDraggableCoverWithID = true
+                .overlay {
+                    // bugfix for disappear capsule view
+                    Capsule(style: .continuous)
+                        .frame(width: 300, height: 68)
+                        .foregroundStyle(.blue)
+                        .onTapGesture {
+                            showDraggableCoverWithID = true
+                        }
                 }
 
             
