@@ -100,12 +100,12 @@ private struct DraggableScreenCoverModifier<Cover: View, ID: Hashable>: ViewModi
             if #available(iOS 26.0, *) {
                 Capsule()
                     .fill(.secondary.opacity(0.6))
-                    .frame(width: 60, height: 5)
+                    .frame(width: 90, height: 8)
                     .glassEffect(.regular.interactive())
             } else {
                 Capsule()
                     .fill(.secondary.opacity(0.6))
-                    .frame(width: 60, height: 5)
+                    .frame(width: 90, height: 8)
                     .background(.thinMaterial)
             }
         }
